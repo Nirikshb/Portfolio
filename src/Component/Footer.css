@@ -1,0 +1,42 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .footer-content {
+    position: relative;
+  }
+  
+  .smooth-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333; /* Replace with desired background color */
+    opacity: 0;
+    z-index: -1;
+    mix-blend-mode: overlay;
+  }
+  
+  .footer-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-text:hover {
+    transform: scale(1.1);
+}
+  
