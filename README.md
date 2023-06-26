@@ -1,2 +1,2 @@
-My Portfolio Website in making
-Tech - React Js, Tailwind Css
+Portfolio Website
+Tech Stack - React Js, Framer Motion
