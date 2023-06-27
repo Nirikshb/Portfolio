@@ -17,6 +17,36 @@
   }
   
   .home-emoji:hover {
-    filter: brightness(150%); /* Adjust the brightness value as desired */
+    filter: brightness(150%);
+  }
+  
+  .scrollbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 6px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scrollbar:hover {
+    opacity: 0.5;
+  }
+  
+  .scrollbar::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scrollbar:hover::before {
+    opacity: 1;
   }
   
