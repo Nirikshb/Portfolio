@@ -1,44 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Header.css';
 
 const Header = () => {
   return (
     <div>
-      <motion.nav
-        className="navbar"
-        transition={{ duration: 1 }}
-      >
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          className="navbar-button"
-        >
-          <span role="img" aria-label="Home" className="home-emoji">
-            🏡
-          </span>
-        </motion.button>
+      <motion.nav className="navbar" transition={{ duration: 1 }}>
+        <Link to="/" exact>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            className="navbar-button"
+          >
+            <span role="img" aria-label="Home" className="home-emoji">
+              🏡
+            </span>
+          </motion.button>
+        </Link>
 
-        <motion.button
-          whileHover={{ scale: 1.1, color: '#ff0000' }}
-          className="navbar-button"
-        >
-          Me
-        </motion.button>
+        <Link to="/me">
+          <motion.button
+            whileHover={{ scale: 1.1, color: '#ff0000' }}
+            className="navbar-button"
+          >
+            Me
+          </motion.button>
+        </Link>
 
-        <motion.button
-          whileHover={{ scale: 1.1, color: '#ff0000' }}
-          className="navbar-button"
-        >
-          Connect with me
-        </motion.button>
-
-        <motion.button
-          whileHover={{ scale: 1.1, color: '#ff0000' }}
-          className="navbar-button"
-        >
-          Connect with me
-        </motion.button>
-        
+        {/* Add more buttons or links as needed */}
       </motion.nav>
       <div className="scrollbar"></div>
     </div>

@@ -1,0 +1,47 @@
+.me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .typewriter-container {
+    text-align: center;
+  }
+  
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+    white-space: nowrap;
+    font-size: 24px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  
+  .name-container {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  
