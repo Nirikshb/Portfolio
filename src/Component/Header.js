@@ -27,7 +27,6 @@ const Header = () => {
           </motion.button>
         </Link>
 
-        {/* Add more buttons or links as needed */}
       </motion.nav>
       <div className="scrollbar"></div>
     </div>

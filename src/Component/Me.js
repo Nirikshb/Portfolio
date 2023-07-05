@@ -9,7 +9,7 @@ const Me = () => {
         className="typewriter-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.1, delay: 0.2 }} // Faster duration and delay
       >
         <h1>
           <span className="typewriter">Hi, I am a frontend Developer</span>
