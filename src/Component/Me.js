@@ -12,7 +12,7 @@ const Me = () => {
         transition={{ duration: 0.1, delay: 0.2 }} // Faster duration and delay
       >
         <h1>
-          <span className="typewriter">Hi, I am a frontend Developer</span>
+          <span className="typewriter">Hi, I am a Frontend Developer</span>
         </h1>
       </motion.div>
       <motion.h2
@@ -21,7 +21,7 @@ const Me = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 2 }}
       >
-        My name is Frank
+        My name is Niriksh Bharti
       </motion.h2>
     </div>
   );
